@@ -1,3 +1,6 @@
+<svelte:head>
+  <title>kuch bhi</title>
+</svelte:head>
 <script lang="ts">
   export let segment: string;
   import authStore from "../../stores/auth.store";
@@ -15,6 +18,7 @@
   import { saveProject } from "../../firebase/db";
   import { wait } from "../../helpers/wait";
   import { onConfirm, onErrorMessage } from "../../help/alerts";
+  
 
   let isOpeningFile = false;
   let fileUpload;
